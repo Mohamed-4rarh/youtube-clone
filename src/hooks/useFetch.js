@@ -4,7 +4,7 @@ export const useFetch = async (url, params) => {
     try {
         const response = await axios.get(url, {
             headers: {
-                'X-RapidAPI-Key': '6f7895e31dmsh2363e628a248ec3p11768fjsn28652689f78b',
+                'X-RapidAPI-Key': '4cb711fb4amsh34a8679891bd0b6p16f5b5jsn803d8c49fefb',
                 'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
             },
             params: params,
