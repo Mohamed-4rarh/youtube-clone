@@ -2,11 +2,11 @@ import {CheckBadgeIcon} from '@heroicons/react/24/solid'
 import { Link } from 'react-router-dom'
 
 // eslint-disable-next-line react/prop-types
-const VideoCard = ({key, img, videoPath, title, channelTitle, channelPath}) => {
+const VideoCard = ({ img, videoPath, title, channelTitle, channelPath}) => {
   return (
-    <Link key={key} to={videoPath} className="bg-[#f9f9f9] rounded-lg w-[320px]">
-      <div className=' rounded-lg flex flex-col justify-between bg-[#1e1e1e] overflow-hidden w-[320px]'>
-        <img src={img} alt="video thumbnail" className='w-[320px] h-[180px] rounded-t-md' />
+    <Link to={videoPath} className="rounded-lg overflow-hidden">
+      <div className='flex flex-col justify-between bg-[rgb(16,16,16)] overflow-hidden w-[400px]'>
+        <img src={img} alt="video thumbnail" className='w-[400px] h-[200px] rounded-t-md' />
         <div className=" rounded-b-lg flex flex-col gap-4 p-4 w-full">
           <span className="text-[white] text-[15px] font-medium inline-block overflow-hidden whitespace-nowrap text-ellipsis">
             {title}

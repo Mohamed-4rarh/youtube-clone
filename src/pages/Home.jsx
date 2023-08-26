@@ -30,7 +30,7 @@ const Home = () => {
       <div className='border-b pb-2 border-[#a1a1a1] shadow-lg w-full overflow-x-auto mb-4 bg-[#000000] sticky top-[65px] sm:top-[70px] right-0'>
         <SideBar setCat={setCat} />
       </div>
-      <div className="flex flex-wrap gap-5 justify-center">
+      <div className="flex flex-wrap gap-[30px] lg:gap-[50px] justify-center mt-[50px]">
         {videos.map((item) => (
           <VideoCard key={item.id.videoId} img={item.snippet.thumbnails.medium.url} videoPath={item.id.videoId} title={item.snippet.title} channelTitle={item.snippet.channelTitle} channelPath={`/channel/${item.snippet.channelId}`} />
         ))}
