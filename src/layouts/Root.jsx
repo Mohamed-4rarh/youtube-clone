@@ -1,12 +1,14 @@
 import { Outlet } from 'react-router-dom'
-import SearchBar from '../components/SearchBar'
+import Navbar from '../components/Navbar';
+
 
 const Root = () => {
+  
   return (
-    <div>
-      <SearchBar />
+    <>
+      <Navbar />
       <Outlet />
-    </div>
+    </>
   )
 }
 
