@@ -6,11 +6,11 @@ import VideoCard from '../components/VideoCard'
 
 const Home = () => {
   const [searchParams] = useSearchParams();
-  const [cat, setCat] = useState('new')
+  const [cat, setCat] = useState('coding')
   const [videos, setVideos] = useState([])
   useEffect(() => {
     const params = {
-      q: searchParams.get('search') || cat || 'sport',
+      q: searchParams.get('search') || cat || 'coding',
       part: "snippet,id",
       regionCode: "US",
       maxResults: "50",
@@ -26,8 +26,8 @@ const Home = () => {
   }, [cat, searchParams])
   console.log(videos)
   return (
-    <div className="flex lg:flex-row flex-col gap-5">
-      <div className=" sticky lg:top-[90px] top-[80px] left-0 bg-black w-full">
+    <div>
+      <div className='border-b pb-2 border-[#a1a1a1] shadow-lg w-full overflow-x-auto mb-4 bg-[#000000] sticky top-[67px] sm:top-[73px] right-0'>
         <SideBar setCat={setCat} />
       </div>
       <div className="flex flex-wrap gap-5 justify-center">
