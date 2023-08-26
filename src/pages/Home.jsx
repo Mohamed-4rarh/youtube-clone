@@ -32,7 +32,7 @@ const Home = () => {
       </div>
       <div className="flex flex-wrap gap-[30px] lg:gap-[50px] justify-center mt-[50px]">
         {videos.map((item) => (
-          <VideoCard key={item.id.videoId} img={item.snippet.thumbnails.medium.url} videoPath={item.id.videoId} title={item.snippet.title} channelTitle={item.snippet.channelTitle} channelPath={`/channel/${item.snippet.channelId}`} />
+          <VideoCard keyId={item.id.videoId} key={item.id.videoId} img={item.snippet.thumbnails.medium.url} videoPath={item.id.videoId} title={item.snippet.title} channelTitle={item.snippet.channelTitle} channelPath={`/channel/${item.snippet.channelId}`} />
         ))}
       </div>
     </div>
