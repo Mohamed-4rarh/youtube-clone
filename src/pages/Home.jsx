@@ -27,7 +27,7 @@ const Home = () => {
   console.log(videos)
   return (
     <div>
-      <div className='border-b pb-2 border-[#a1a1a1] shadow-lg w-full overflow-x-auto mb-4 bg-[#000000] sticky top-[67px] sm:top-[73px] right-0'>
+      <div className='border-b pb-2 border-[#a1a1a1] shadow-lg w-full overflow-x-auto mb-4 bg-[#000000] sticky top-[65px] sm:top-[70px] right-0'>
         <SideBar setCat={setCat} />
       </div>
       <div className="flex flex-wrap gap-5 justify-center">
