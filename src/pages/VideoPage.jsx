@@ -24,7 +24,7 @@ const VideoPage = () => {
     <div className='flex flex-col lg:flex-row justify-between gap-10 px-5'>
       {videoData &&
         videoData.map((vid) => (
-          <div className="flex-1 sticky top-[80px] bg-black" key={videoId}>
+          <div className="flex-1 sticky top-[65px] sm:top-[73px] bg-black" key={videoId}>
             <iframe
               width='100%'
               className='h-[220px] sm:h-[320px] md:h-[360px] lg:h-[400px] xl:h-[640px] rounded-xl'
@@ -35,6 +35,10 @@ const VideoPage = () => {
             ></iframe>
             <div>
               <h3 className="text-[#fff]">{vid.snippet.title}</h3>
+              
+              <details className='text-[#fff]'>
+                {vid.snippet.description}
+              </details>
             </div>
           </div>
         ))
